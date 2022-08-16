@@ -10,15 +10,28 @@ namespace Inventory
     internal class DataValidation
     {
         Product prod;
+        string u;
+        string p;
 
-        public DataValidation()
+        public DataValidation(string username,string password)
         {
+            u = username;
+            p= password;
 
         }
+
 
         public DataValidation(Product product)
         {
             prod = product;
+        }
+        public bool ValidateLogin()
+        {
+            if (u == "Eyosias" && p == "Eyosias123")
+            {
+                return true;
+            }
+            return false;
         }
 
         public bool ValidateName()

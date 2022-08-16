@@ -10,35 +10,27 @@ using System.Windows.Forms;
 
 namespace Inventory
 {
-    public partial class Search : Form
+    public partial class Delete : Form
     {
         Product product;
-        public Search()
+        public Delete()
         {
             InitializeComponent();
         }
 
-        private void btnsearch_Click(object sender, EventArgs e)
-        {
-            string name = txtsearch.Text;
-            dataGridView1.ReadOnly = true;
-            dataGridView1.DataSource = product.findOne(name);
-
-        }
-
-        private void Search_Load(object sender, EventArgs e)
+        private void Delete_Load(object sender, EventArgs e)
         {
             product = new Product();
             dataGridView1.ReadOnly = true;
             dataGridView1.DataSource = product.DisplayAll();
-           // dataGridView1.AllowUserToDeleteRows = true;
-
-
         }
 
-        private void btnback_Click(object sender, EventArgs e)
+        private void btndelete_Click(object sender, EventArgs e)
         {
-            this.Close();
+            int text = int.Parse(txtdelete.Text);
+            product.Remove(text);
+            product.Save();
+            dataGridView1.DataSource = product.DisplayAll();
         }
     }
 }

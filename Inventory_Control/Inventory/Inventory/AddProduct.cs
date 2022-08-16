@@ -32,7 +32,7 @@ namespace Inventory
                     str += " " + s.ToString();
                 }
                 product.Inventory_Number = int.Parse(txtnumber.Text);
-                product.dateTime = DateTime.Now;
+                product.dateTime = dateTimePicker1.Value;
                 product.Count = int.Parse(txtcount.Text);
                 product.Object_Name = txtobject.Text;
                 product.Price = double.Parse(txtprice.Text);

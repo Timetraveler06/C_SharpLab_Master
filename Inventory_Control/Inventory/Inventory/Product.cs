@@ -49,5 +49,17 @@ namespace Inventory
         {
             list.Add(this);
         }
+        public bool Remove(int number)
+        {
+            if (list.Count > 0)
+            {
+                number= this.Inventory_Number;
+                list.RemoveAt(number);
+                return true;
+            }
+            return false;
+
+        }
+
     }
 }

@@ -13,3 +13,4 @@ C:\Users\TOSHIBA\Documents\GitHub\C_SharpLab_Master\Inventory_Control\Inventory\
 C:\Users\TOSHIBA\Documents\GitHub\C_SharpLab_Master\Inventory_Control\Inventory\Inventory\obj\Debug\Inventory.AddProduct.resources
 C:\Users\TOSHIBA\Documents\GitHub\C_SharpLab_Master\Inventory_Control\Inventory\Inventory\obj\Debug\Inventory.Search.resources
 C:\Users\TOSHIBA\Documents\GitHub\C_SharpLab_Master\Inventory_Control\Inventory\Inventory\obj\Debug\Inventory.ViewAll.resources
+C:\Users\TOSHIBA\Documents\GitHub\C_SharpLab_Master\Inventory_Control\Inventory\Inventory\obj\Debug\Inventory.Delete.resources
