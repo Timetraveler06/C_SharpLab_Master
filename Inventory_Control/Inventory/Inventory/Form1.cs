@@ -10,11 +10,41 @@ using System.Windows.Forms;
 
 namespace Inventory
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
-        public Form1()
+        public Login()
         {
             InitializeComponent();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnlogin_Click(object sender, EventArgs e)
+
+        {
+            Login form = new Login();
+            MainContainer mainContainer = new MainContainer();
+            string username = txtusername.Text;
+            string password = txtpassword.Text;
+
+            if (username == "Eyosias" && password == "Eyosias123")
+            {
+                form.Hide();
+                mainContainer.Show();
+
+            }
+            else
+                MessageBox.Show(" Incorrect UserName or Password");
+
+
+        }
+
+        private void btnexit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
