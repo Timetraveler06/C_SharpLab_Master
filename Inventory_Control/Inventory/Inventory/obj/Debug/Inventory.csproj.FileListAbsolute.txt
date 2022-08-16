@@ -10,3 +10,6 @@ C:\Users\TOSHIBA\Documents\GitHub\C_SharpLab_Master\Inventory_Control\Inventory\
 C:\Users\TOSHIBA\Documents\GitHub\C_SharpLab_Master\Inventory_Control\Inventory\Inventory\obj\Debug\Inventory.csproj.CoreCompileInputs.cache
 C:\Users\TOSHIBA\Documents\GitHub\C_SharpLab_Master\Inventory_Control\Inventory\Inventory\obj\Debug\Inventory.exe
 C:\Users\TOSHIBA\Documents\GitHub\C_SharpLab_Master\Inventory_Control\Inventory\Inventory\obj\Debug\Inventory.pdb
+C:\Users\TOSHIBA\Documents\GitHub\C_SharpLab_Master\Inventory_Control\Inventory\Inventory\obj\Debug\Inventory.AddProduct.resources
+C:\Users\TOSHIBA\Documents\GitHub\C_SharpLab_Master\Inventory_Control\Inventory\Inventory\obj\Debug\Inventory.Search.resources
+C:\Users\TOSHIBA\Documents\GitHub\C_SharpLab_Master\Inventory_Control\Inventory\Inventory\obj\Debug\Inventory.ViewAll.resources

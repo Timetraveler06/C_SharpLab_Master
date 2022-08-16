@@ -26,14 +26,15 @@ namespace Inventory
 
         {
             Login form = new Login();
+            DataValidation dv;
             MainContainer mainContainer = new MainContainer();
             string username = txtusername.Text;
             string password = txtpassword.Text;
-
-            if (username == "Eyosias" && password == "Eyosias123")
+            dv= new DataValidation(username,password);
+            if (dv.ValidateLogin())
             {
-                form.Hide();
                 mainContainer.Show();
+                form.Hide();
 
             }
             else

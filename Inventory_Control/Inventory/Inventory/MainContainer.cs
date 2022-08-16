@@ -35,5 +35,28 @@ namespace Inventory
             this.Close();
             
         }
+
+        private void searchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (ActiveMdiChild != null)
+            {
+                ActiveMdiChild.Close();
+            }
+            Search form = new Search();
+            form.MdiParent = this.MdiParent;
+            form.Show();
+        }
+
+        private void viewToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (ActiveMdiChild != null)
+            {
+                ActiveMdiChild.Close();
+            }
+            ViewAll form = new ViewAll();
+            form.MdiParent = this.MdiParent;
+            form.Show();
+
+        }
     }
 }

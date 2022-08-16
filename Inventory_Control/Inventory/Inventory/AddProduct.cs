@@ -16,5 +16,47 @@ namespace Inventory
         {
             InitializeComponent();
         }
+        Product product;
+        private void btnadd_Click(object sender, EventArgs e)
+        {
+            product = new Product();
+            DataValidation valid;
+            //Exception
+
+            try
+            {
+                var str = "";
+
+                foreach (var s in checkedListBox1.CheckedItems)
+                {
+                    str += " " + s.ToString();
+                }
+                product.Inventory_Number = int.Parse(txtnumber.Text);
+                product.dateTime = DateTime.Now;
+                product.Count = int.Parse(txtcount.Text);
+                product.Object_Name = txtobject.Text;
+                product.Price = double.Parse(txtprice.Text);
+                product.Original = radioButton1.Checked;
+                product.Refurbished= radioButton2.Checked;
+                product.Checked = str;
+                
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+            valid = new DataValidation(product);
+            if (valid.TotalValidation())
+            {
+                product.Save();
+                MessageBox.Show(" **** ADDED SUCCESSFULLY***********");
+            }
+            else
+                MessageBox.Show(" Data Validation Error ");
+
+        }
     }
 }
