@@ -225,7 +225,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblnumber);
             this.Name = "AddProduct";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddProduct";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

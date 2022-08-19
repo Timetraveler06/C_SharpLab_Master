@@ -28,30 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnback = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.productUserControl1 = new Inventory.ProductUserControl();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(758, 305);
-            this.dataGridView1.TabIndex = 0;
             // 
             // btnback
             // 
-            this.btnback.Location = new System.Drawing.Point(303, 378);
+            this.btnback.Location = new System.Drawing.Point(325, 405);
             this.btnback.Name = "btnback";
-            this.btnback.Size = new System.Drawing.Size(75, 23);
+            this.btnback.Size = new System.Drawing.Size(75, 33);
             this.btnback.TabIndex = 1;
             this.btnback.Text = "Back";
             this.btnback.UseVisualStyleBackColor = true;
             this.btnback.Click += new System.EventHandler(this.btnback_Click);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Controls.Add(this.productUserControl1);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 12);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(531, 387);
+            this.flowLayoutPanel1.TabIndex = 2;
+            // 
+            // productUserControl1
+            // 
+            this.productUserControl1.Checked = null;
+            this.productUserControl1.Count = null;
+            this.productUserControl1.Date = null;
+            this.productUserControl1.Is_Available = null;
+            this.productUserControl1.Location = new System.Drawing.Point(3, 3);
+            this.productUserControl1.MyProperty = null;
+            this.productUserControl1.Name = "productUserControl1";
+            this.productUserControl1.Object = null;
+            this.productUserControl1.Original = null;
+            this.productUserControl1.Price = null;
+            this.productUserControl1.Refurbished = null;
+            this.productUserControl1.Size = new System.Drawing.Size(257, 443);
+            this.productUserControl1.TabIndex = 0;
             // 
             // ViewAll
             // 
@@ -61,19 +77,19 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.ControlBox = false;
             this.Controls.Add(this.btnback);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "ViewAll";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ViewAll";
             this.Load += new System.EventHandler(this.ViewAll_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnback;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private ProductUserControl productUserControl1;
     }
 }

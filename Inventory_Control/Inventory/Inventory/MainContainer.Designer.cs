@@ -33,8 +33,8 @@
             this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.goBackToLognToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.goBackToLognToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,6 +60,7 @@
             this.productToolStripMenuItem.Name = "productToolStripMenuItem";
             this.productToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
             this.productToolStripMenuItem.Text = "Product";
+            this.productToolStripMenuItem.Click += new System.EventHandler(this.productToolStripMenuItem_Click);
             // 
             // addToolStripMenuItem
             // 
@@ -82,19 +83,19 @@
             this.viewToolStripMenuItem.Text = "View ";
             this.viewToolStripMenuItem.Click += new System.EventHandler(this.viewToolStripMenuItem_Click);
             // 
-            // goBackToLognToolStripMenuItem
-            // 
-            this.goBackToLognToolStripMenuItem.Name = "goBackToLognToolStripMenuItem";
-            this.goBackToLognToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
-            this.goBackToLognToolStripMenuItem.Text = "Go Back to Logn";
-            this.goBackToLognToolStripMenuItem.Click += new System.EventHandler(this.goBackToLognToolStripMenuItem_Click);
-            // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
             this.deleteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.deleteToolStripMenuItem.Text = "Delete";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
+            // 
+            // goBackToLognToolStripMenuItem
+            // 
+            this.goBackToLognToolStripMenuItem.Name = "goBackToLognToolStripMenuItem";
+            this.goBackToLognToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
+            this.goBackToLognToolStripMenuItem.Text = "Go Back to Logn";
+            this.goBackToLognToolStripMenuItem.Click += new System.EventHandler(this.goBackToLognToolStripMenuItem_Click);
             // 
             // MainContainer
             // 

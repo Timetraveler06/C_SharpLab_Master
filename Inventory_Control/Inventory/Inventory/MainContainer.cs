@@ -54,7 +54,7 @@ namespace Inventory
                 ActiveMdiChild.Close();
             }
             ViewAll form = new ViewAll();
-            form.MdiParent = this.MdiParent;
+            form.MdiParent = this;
             form.Show();
 
         }
@@ -66,8 +66,13 @@ namespace Inventory
                 ActiveMdiChild.Close();
             }
             Delete form = new Delete();
-            form.MdiParent = this.MdiParent;
+            form.MdiParent = this;
             form.Show();
+
+        }
+
+        private void productToolStripMenuItem_Click(object sender, EventArgs e)
+        {
 
         }
     }

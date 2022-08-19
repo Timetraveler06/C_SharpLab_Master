@@ -26,8 +26,13 @@ namespace Inventory
         private void ViewAll_Load(object sender, EventArgs e)
         {
             product = new Product();
-            dataGridView1.ReadOnly = true;
-            dataGridView1.DataSource = product.DisplayAll();
+            flowLayoutPanel1.Controls.Clear();
+            foreach (var Item in product.DisplayAll())
+            {
+                ProductUserControl pc = new ProductUserControl(Item.Inventory_Number,Item.Object_Name,Item.dateTime, Item.Price, Item.Count,Item.Checked, Item.Is_Available,Item.Original,Item.Refurbished);
+                flowLayoutPanel1.Controls.Add(pc);
+            }
+
         }
     }
 }
