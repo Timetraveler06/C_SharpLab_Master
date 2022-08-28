@@ -60,6 +60,6 @@ namespace Inventory
             return false;
 
         }
-
+       // private void card_click(object o ,)
     }
 }

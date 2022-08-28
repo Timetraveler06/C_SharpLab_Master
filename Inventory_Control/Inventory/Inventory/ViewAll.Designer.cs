@@ -68,6 +68,7 @@
             this.productUserControl1.Refurbished = null;
             this.productUserControl1.Size = new System.Drawing.Size(257, 443);
             this.productUserControl1.TabIndex = 0;
+            this.productUserControl1.Load += new System.EventHandler(this.productUserControl1_Load);
             // 
             // ViewAll
             // 

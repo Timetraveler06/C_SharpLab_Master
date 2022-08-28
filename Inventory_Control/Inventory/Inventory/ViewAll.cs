@@ -29,9 +29,14 @@ namespace Inventory
             flowLayoutPanel1.Controls.Clear();
             foreach (var Item in product.DisplayAll())
             {
-                ProductUserControl pc = new ProductUserControl(Item.Inventory_Number,Item.Object_Name,Item.dateTime, Item.Price, Item.Count,Item.Checked, Item.Is_Available,Item.Original,Item.Refurbished);
+                ProductUserControl pc = new ProductUserControl(Item.Inventory_Number, Item.Object_Name, Item.dateTime, Item.Price, Item.Count, Item.Checked, Item.Is_Available, Item.Original, Item.Refurbished);
+                pc.Click += pc.Card;
                 flowLayoutPanel1.Controls.Add(pc);
             }
+        }
+
+        private void productUserControl1_Load(object sender, EventArgs e)
+        {
 
         }
     }

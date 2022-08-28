@@ -114,5 +114,12 @@ namespace Inventory
         {
 
         }
+
+        public void Card(object sender, EventArgs e)
+        {
+            MessageBox.Show(" Card clicked");
+        }
+
+       
     }
 }
