@@ -46,7 +46,6 @@ namespace Inventory
                     conn = new SqlConnection(path);
                     conn.Open();
                     cmd = new SqlCommand("INSERT INTO LoginPage VALUES('" + username + "','" + password + "')", conn);
-                  
                     cmd.ExecuteNonQuery();
                     mainContainer.Show();
                     form.Hide();
