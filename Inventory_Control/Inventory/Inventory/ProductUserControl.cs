@@ -120,6 +120,9 @@ namespace Inventory
             MessageBox.Show(" Card clicked");
         }
 
-       
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
